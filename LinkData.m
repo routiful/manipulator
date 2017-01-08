@@ -10,7 +10,7 @@ uLINK(1).child  = 2;
 uLINK(1).p = [0 0 0]'; % Position in World Coordinates
 uLINK(1).R = eye(3);   % Attitude in World Coordinates
 uLINK(1).q = 0;        % Joint angle
-uLINK(1).a = [0 0 0]'; % Joint Axis Vector (Relative to Parent)
+uLINK(1).a = [0 0 0]'; % Joint Axis Vector 
 uLINK(1).b = [0 0 0]'; % Joint Relative Position (Relative to Parent)
 %=========================================================================%
 %=========================================================================%
@@ -21,7 +21,7 @@ uLINK(2).child  = 3;
 uLINK(2).p = [0 0 0]'; % Position in World Coordinates
 uLINK(2).R = eye(3);   % Attitude in World Coordinates
 uLINK(2).q = 0;        % Joint angle
-uLINK(2).a = [0 0 1]'; % Joint Axis Vector (Relative to Parent)
+uLINK(2).a = [0 0 1]'; % Joint Axis Vector 
 uLINK(2).b = [0 0 0]'; % Joint Relative Position (Relative to Parent)
 
 uLINK(2).joint_vertex = [-0.5 -0.5 0; 0.5 -0.5 0; 0.5 0.5 0; -0.5 0.5 0; 
@@ -38,7 +38,7 @@ uLINK(3).child  = 4;
 uLINK(3).p = zeros(1,3)';  % Position in World Coordinates
 uLINK(3).R = eye(3);       % Attitude in World Coordinates
 uLINK(3).q = 0;            % Joint angle 
-uLINK(3).a = [0 1 0]';     % Joint Axis Vector (Relative to Parent)
+uLINK(3).a = [0 1 0]';     % Joint Axis Vector 
 uLINK(3).b = [0 0 3]';     % Joint Relative Position (Relative to Parent)
 
 uLINK(3).joint_vertex = [-0.5   -1 0; 0.5   -1 0; 0.5   1 0; -0.5   1 0; 
@@ -55,7 +55,7 @@ uLINK(4).child  = 5;
 uLINK(4).p = zeros(1,3)';  % Position in World Coordinates
 uLINK(4).R = eye(3);       % Attitude in World Coordinates
 uLINK(4).q = 0;            % Joint angle  
-uLINK(4).a = [0 1 0]';     % Joint Axis Vector (Relative to Parent)
+uLINK(4).a = [0 1 0]';     % Joint Axis Vector 
 uLINK(4).b = [0 0 4]';     % Joint Relative Position (Relative to Parent)
 
 uLINK(4).joint_vertex = [-0.5   -1 0; 0.5   -1 0; 0.5   1 0; -0.5   1 0; 
@@ -72,5 +72,5 @@ uLINK(5).child  = 0;
 uLINK(5).p = zeros(1,3)';  % Position in World Coordinates
 uLINK(5).R = eye(3);       % Attitude in World Coordinates
 uLINK(5).q = 0;            % Joint angle  
-uLINK(5).a = [0 0 0]';     % Joint Axis Vector (Relative to Parent)
+uLINK(5).a = [0 0 0]';     % Joint Axis Vector 
 uLINK(5).b = [0 0 3]';     % Joint Relative Position (Relative to Parent)

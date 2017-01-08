@@ -12,9 +12,9 @@ else
     q4 = -acos(c5) + pi; % Joint3
 end
 
-R = Base.R' * End.R * Rpitch(q4)';
+R = Base.R' * End.R * Rotation('pitch', q4)';
 q3 = atan2(R(1,3), R(1,1));
 q2 = atan2(R(2,1), R(1,1));
 
-q = [q2 q3 q4];
+q = [q2 q3 q4]
 
