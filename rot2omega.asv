@@ -11,13 +11,16 @@ if diagonal(1) == 1
     elseif diagonal(2) == -1 && diagonal(3) == -1
         flag = 1;
     end
-elseif diagonal(1) == -1
+elseif 
+end    
+
+if diagonal(1) == -1
     if diagonal(2) == 1 && diagonal(3) == -1
         flag = 1;
     elseif diagonal(2) == -1 && diagonal(3) == 1
         flag = 1;
     end
-end    
+end 
 
 if R == eye(3)
     w = [0 0 0]';
