@@ -1,5 +1,5 @@
 function ForwardKinematics(j)
-global uLINK
+global uLINK;
 
 if j == 0 
     return;

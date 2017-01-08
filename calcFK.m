@@ -1,10 +1,12 @@
-function calcFK(joint1, joint2, joint3)
-global uLINK;
+function calcFK(q1, q2, q3)
+global uLINK
 
-uLINK(2).q = joint1;
-uLINK(3).q = joint2;
-uLINK(4).q = joint3;
+LinkData
 
-ForwardKinematics(1);
+uLINK(2).q = q1;
+uLINK(3).q = q2;
+uLINK(4).q = q3;
+
+ForwardKinematics(1)
 DrawManipulator
 End_position = uLINK(5).p'
