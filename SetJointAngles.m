@@ -6,3 +6,4 @@ for n = 1:length(idx)
     uLINK(j).q = q(n);
 end
 ForwardKinematics(1);
+end

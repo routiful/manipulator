@@ -10,5 +10,6 @@ for n = 1:jsize
     mom = uLINK(j).mother;
     a = uLINK(mom).R * uLINK(j).a; % joint axis in world frame
     J(:,n) = [calcHatto(a) * (target - uLINK(j).p) ; 
-                             a                     ];
+                            a                     ];
+end
 end

@@ -8,7 +8,9 @@ idx = FindRoute(to);
 for n = 1:10
     J   = CalcJacobian(idx);
     err = CalcVWerr(Target, uLINK(to)); % Calculate velocity and angular velocity
-    norm(err)
+    uLINK(to).p
+    uLINK(to).R
+    norm(err);
     if norm(err) < 1E-6 
         return;
     end
