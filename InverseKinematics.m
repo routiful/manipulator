@@ -10,7 +10,7 @@ for n = 1:10
     err = CalcVWerr(Target, uLINK(to)); % Calculate velocity and angular velocity
     uLINK(to).p
     uLINK(to).R
-    norm(err);
+    norm(err)
     if norm(err) < 1E-6 
         return;
     end

@@ -1,4 +1,4 @@
 LinkData;
 SetParameter;
-InverseKinematics(4, End);
+InverseKinematics(5, End);
 DrawManipulator;

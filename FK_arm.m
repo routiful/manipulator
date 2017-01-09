@@ -1,7 +1,7 @@
 global uLINK
 LinkData;
 
-SetJointAngles(FindRoute(4), [degtorad(0) degtorad(20) degtorad(0)]);
+SetJointAngles(FindRoute(4), [degtorad(0) degtorad(0) degtorad(0)]);
 DrawManipulator;
 
 End_position = uLINK(5).p'
