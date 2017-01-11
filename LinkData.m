@@ -17,6 +17,9 @@ uLINK(1).c = [0 0 0]';   % Center of Mass in Local Coordinates
 uLINK(1).mc = [0 0 0]';  % Center of Mass in World Coordinates
 uLINK(1).v = [0 0 0]';   % Linear Velocity in World Coordinates
 uLINK(1).w = [0 0 0]';   % Angular Velocity in World Coordinates
+uLINK(1).I = [0 0 0;
+              0 0 0;
+              0 0 0];    % Inertia tensor in Reference Posture 
 %=========================================================================%
 %=========================================================================%
 uLINK(2).name   = 'Joint1';
@@ -35,6 +38,9 @@ uLINK(2).c = [0 0 1.5]';   % Center of Mass in Local Coordinates
 uLINK(2).mc = [0 0 1.5]';  % Center of Mass in World Coordinates
 uLINK(2).v = [0 0 0]';     % Linear Velocity in World Coordinates
 uLINK(2).w = [0 0 0]';     % Angular Velocity in World Coordinates
+uLINK(2).I = [1 0 0;
+              0 1 0;
+              0 0 1];      % Inertia tensor in Reference Posture
 
 uLINK(2).joint_vertex = [-0.5 -0.5 0; 0.5 -0.5 0; 0.5 0.5 0; -0.5 0.5 0; 
                          -0.5 -0.5 2; 0.5 -0.5 2; 0.5 0.5 2; -0.5 0.5 2];
@@ -59,7 +65,10 @@ uLINK(3).c = [0 0 2]';     % Center of Mass in Local Coordinates
 uLINK(3).mc = [0 0 2]';    % Center of Mass in World Coordinates
 uLINK(3).v = [0 0 0]';     % Linear Velocity in World Coordinates
 uLINK(3).w = [0 0 0]';     % Angular Velocity in World Coordinates
-
+uLINK(3).I = [1 0 0;
+              0 1 0;
+              0 0 1];      % Inertia tensor in Reference Posture
+          
 uLINK(3).joint_vertex = [-0.5   -1 0; 0.5   -1 0; 0.5   1 0; -0.5   1 0; 
                          -0.5   -1 1; 0.5   -1 1; 0.5   1 1; -0.5   1 1];
 uLINK(3).link_vertex  = [-0.2 -0.2 1; 0.2 -0.2 1; 0.2 0.2 1; -0.2 0.2 1; 
@@ -83,6 +92,9 @@ uLINK(4).c = [0 0 1.5]';   % Center of Mass in Local Coordinates
 uLINK(4).mc = [0 0 1.5]';  % Center of Mass in World Coordinates
 uLINK(4).v = [0 0 0]';     % Linear Velocity in World Coordinates
 uLINK(4).w = [0 0 0]';     % Angular Velocity in World Coordinates
+uLINK(4).I = [1 0 0;
+              0 1 0;
+              0 0 1];      % Inertia tensor in Reference Posture
 
 uLINK(4).joint_vertex = [-0.5   -1 0; 0.5   -1 0; 0.5   1 0; -0.5   1 0; 
                          -0.5   -1 1; 0.5   -1 1; 0.5   1 1; -0.5   1 1];
@@ -107,3 +119,6 @@ uLINK(5).c = [0 0 0]';     % Center of Mass in Local Coordinates
 uLINK(5).mc = [0 0 0]';    % Center of Mass in World Coordinates
 uLINK(5).v = [0 0 0]';     % Linear Velocity in World Coordinates
 uLINK(5).w = [0 0 0]';     % Angular Velocity in World Coordinates
+uLINK(5).I = [0 0 0;
+              0 0 0;
+              0 0 0];      % Inertia tensor in Reference Posture
