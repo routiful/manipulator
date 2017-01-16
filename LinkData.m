@@ -19,7 +19,7 @@ uLINK(1).v = [0 0 0]';   % Linear Velocity in World Coordinates
 uLINK(1).w = [0 0 0]';   % Angular Velocity in World Coordinates
 uLINK(1).I = [0 0 0;
               0 0 0;
-              0 0 0];    % Inertia tensor in Reference Posture 
+              0 0 0];    % Inertia tensor in Reference Posture
 %=========================================================================%
 %=========================================================================%
 uLINK(2).name   = 'Joint1';
