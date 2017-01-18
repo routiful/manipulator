@@ -32,7 +32,7 @@ uLINK(2).ddq = 0;      % Joint acceleration
 uLINK(2).a = [0 0 1]'; % Joint Axis Vector 
 uLINK(2).b = [0 0 0]'; % Joint Relative Position (Relative to Parent)
 uLINK(2).c = [0 0 1.5]';   % Center of Mass in Local Coordinates
-uLINK(2).mc = [0 0 1.5]';  % Center of Mass in World Coordinates
+uLINK(2).mc = [0 0 0]';  % Center of Mass in World Coordinates
 uLINK(2).v = [0 0 0]';     % Linear Velocity in World Coordinates
 uLINK(2).w = [0 0 0]';     % Angular Velocity in World Coordinates
 
@@ -56,7 +56,7 @@ uLINK(3).ddq = 0;          % Joint acceleration
 uLINK(3).a = [0 1 0]';     % Joint Axis Vector 
 uLINK(3).b = [0 0 3]';     % Joint Relative Position (Relative to Parent)
 uLINK(3).c = [0 0 2]';     % Center of Mass in Local Coordinates
-uLINK(3).mc = [0 0 2]';    % Center of Mass in World Coordinates
+uLINK(3).mc = [0 0 0]';    % Center of Mass in World Coordinates
 uLINK(3).v = [0 0 0]';     % Linear Velocity in World Coordinates
 uLINK(3).w = [0 0 0]';     % Angular Velocity in World Coordinates
 
@@ -80,7 +80,7 @@ uLINK(4).ddq = 0;          % Joint acceleration
 uLINK(4).a = [0 1 0]';     % Joint Axis Vector 
 uLINK(4).b = [0 0 4]';     % Joint Relative Position (Relative to Parent)
 uLINK(4).c = [0 0 1.5]';   % Center of Mass in Local Coordinates
-uLINK(4).mc = [0 0 1.5]';  % Center of Mass in World Coordinates
+uLINK(4).mc = [0 0 0]';  % Center of Mass in World Coordinates
 uLINK(4).v = [0 0 0]';     % Linear Velocity in World Coordinates
 uLINK(4).w = [0 0 0]';     % Angular Velocity in World Coordinates
 

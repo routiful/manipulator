@@ -7,7 +7,7 @@ LinkData;
 
 global uLINK
 
-SetJointAngles(FindRoute(4), [degtorad(-40) degtorad(30) degtorad(8)]);
+SetJointAngles(FindRoute(4), [degtorad(-20) degtorad(30) degtorad(8)]);
 DrawManipulator;
 
 
