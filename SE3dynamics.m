@@ -1,9 +1,9 @@
-function [P,L] = SE3dynamics(j)
+function [P,L] = SE3dynamics(j, f, tau)
 global uLINK
 
 w_c = uLINK(j).R * uLINK(j).c + uLINK(j).p;  % center of mass
 w_I = uLINK(j).R * uLINK(j).I * uLINK(j).R'; % inertia tensor
-c_hat = calchatto(w_c);
+c_hat = calcHatto(w_c);
 
 % spatial inertia matrix
 Iww = w_I + uLINK(j).m * c_hat * c_hat';
@@ -15,8 +15,10 @@ P = uLINK(j).m * (uLINK(j).vo + cross(uLINK(j).w, w_c));      % linear momentum
 L = uLINK(j).m * cross(w_c, uLINK(j).vo) + Iww * uLINK(j).w;  % angluar momentum
 pp = [             cross(uLINK(j).w, P);
       cross(uLINK(j).vo, P) + cross(uLINK(j).w, L)];
+
+ext_power = [f; tau]; % 6x1
   
-a0 = Inv(Is)*(-pp);  % spatial acceleration
+a0 = inv(Is)*(ext_power-pp);  % spatial acceleration
 
 uLINK(j).dvo = a0(1:3);
 uLINK(j).dw  = a0(4:6);

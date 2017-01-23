@@ -15,7 +15,7 @@ uLINK.mother = 0;
 lx  = 0.1;
 ly  = 0.4;
 lz  = 0.9;
-[uLINK(1).vertex, uLINK(1).face]   = MakeBox([lx ly lz]  ,[lx/2 ly/2 lz/2] );    % BODY
+[uLINK(1).vertex, uLINK(1).face]   = Makebox([lx ly lz]  ,[lx/2 ly/2 lz/2] );    % BODY
 
 %%%%%%%%%%%%%%%%%%
 

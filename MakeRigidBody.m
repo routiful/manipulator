@@ -3,8 +3,8 @@ global uLINK
 uLINK(j).m = mass; % mass
 uLINK(j).c = [0 0 0]'; % center of mass
 uLINK(j).I = [ 1/12*(wdh(2)^2 + wdh(3)^2) 0 0;
-    0 1/12*(wdh(1)^2 + wdh(3)^2) 0;
-    0 0 1/12*(wdh(1)^2 + wdh(2)^2)] * uLINK.m; % inertia tensor
+               0 1/12*(wdh(1)^2 + wdh(3)^2) 0;
+               0 0 1/12*(wdh(1)^2 + wdh(2)^2)] * uLINK.m; % inertia tensor
 uLINK(j).vertex = 0.5*[
     -wdh(1) -wdh(2) -wdh(3);
     -wdh(1) wdh(2) -wdh(3);
